@@ -1,0 +1,9 @@
+cython
+multidict
+attrs
+yarl
+async_timeout
+idna_ssl
+charset-normalizer
+aiosignal
+setuptools_rust

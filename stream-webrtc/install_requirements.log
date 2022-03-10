@@ -1,0 +1,763 @@
+Collecting cython (from -r requirements.txt (line 1))
+  Using cached https://files.pythonhosted.org/packages/9f/79/311cfbca90332ab37ef8ea08f1af3266f20a9a0e7a1d652842db832226bb/Cython-0.29.28-py2.py3-none-any.whl
+Collecting async-timeout (from -r requirements.txt (line 2))
+  Using cached https://files.pythonhosted.org/packages/d6/c1/8991e7c5385b897b8c020cdaad718c5b087a6626d1d11a23e1ea87e325a7/async_timeout-4.0.2-py3-none-any.whl
+Collecting av (from -r requirements.txt (line 3))
+  Using cached https://files.pythonhosted.org/packages/68/d2/89baab5f5341d3578cca7c98eac0ffd69386e5a55c8f7ab802e67b719319/av-9.0.0.tar.gz
+Collecting aiohttp (from -r requirements.txt (line 4))
+Collecting aiohttp_basicauth (from -r requirements.txt (line 5))
+  Using cached https://files.pythonhosted.org/packages/a8/e3/21828d13f4eafcefcd2e3d4b651520a35bb66e869b5d062efc458601ae51/aiohttp_basicauth-1.0.0-py3-none-any.whl
+Collecting aioice (from -r requirements.txt (line 6))
+  Using cached https://files.pythonhosted.org/packages/f0/ee/739a88e3ac67cf4ca158ded47129bb9adfaf43e787a1a27525a37e86729c/aioice-0.7.6-py3-none-any.whl
+Collecting aiortc (from -r requirements.txt (line 7))
+  Using cached https://files.pythonhosted.org/packages/e3/c6/3f161e73febaea00e1442ad74de10aa1d330bbec9cb8d00e37d7cfb9d8af/aiortc-1.3.0.tar.gz
+Collecting typing-extensions>=3.6.5; python_version < "3.8" (from async-timeout->-r requirements.txt (line 2))
+  Using cached https://files.pythonhosted.org/packages/45/6b/44f7f8f1e110027cf88956b59f2fad776cca7e1704396d043f89effd3a0e/typing_extensions-4.1.1-py3-none-any.whl
+Collecting multidict<7.0,>=4.5 (from aiohttp->-r requirements.txt (line 4))
+Collecting charset-normalizer<3.0,>=2.0 (from aiohttp->-r requirements.txt (line 4))
+  Using cached https://files.pythonhosted.org/packages/06/b3/24afc8868eba069a7f03650ac750a778862dc34941a4bebeb58706715726/charset_normalizer-2.0.12-py3-none-any.whl
+Collecting aiosignal>=1.1.2 (from aiohttp->-r requirements.txt (line 4))
+  Using cached https://files.pythonhosted.org/packages/3b/87/fe94898f2d44a93a35d5aa74671ed28094d80753a1113d68b799fab6dc22/aiosignal-1.2.0-py3-none-any.whl
+Collecting attrs>=17.3.0 (from aiohttp->-r requirements.txt (line 4))
+  Using cached https://files.pythonhosted.org/packages/be/be/7abce643bfdf8ca01c48afa2ddf8308c2308b0c3b239a44e57d020afa0ef/attrs-21.4.0-py2.py3-none-any.whl
+Collecting asynctest==0.13.0; python_version < "3.8" (from aiohttp->-r requirements.txt (line 4))
+  Using cached https://files.pythonhosted.org/packages/e8/b6/8d17e169d577ca7678b11cd0d3ceebb0a6089a7f4a2de4b945fe4b1c86db/asynctest-0.13.0-py3-none-any.whl
+Collecting frozenlist>=1.1.1 (from aiohttp->-r requirements.txt (line 4))
+Collecting yarl<2.0,>=1.0 (from aiohttp->-r requirements.txt (line 4))
+Collecting idna-ssl>=1.0; python_version < "3.7" (from aiohttp->-r requirements.txt (line 4))
+Collecting dnspython>=2.0.0 (from aioice->-r requirements.txt (line 6))
+  Using cached https://files.pythonhosted.org/packages/9b/ed/28fb14146c7033ba0e89decd92a4fa16b0b69b84471e2deab3cc4337cc35/dnspython-2.2.1-py3-none-any.whl
+Collecting netifaces (from aioice->-r requirements.txt (line 6))
+Collecting cffi>=1.0.0 (from aiortc->-r requirements.txt (line 7))
+Collecting cryptography>=2.2 (from aiortc->-r requirements.txt (line 7))
+Collecting google-crc32c>=1.1 (from aiortc->-r requirements.txt (line 7))
+Collecting pyee>=9.0.0 (from aiortc->-r requirements.txt (line 7))
+  Using cached https://files.pythonhosted.org/packages/c7/54/10695d113f03688d79d24bbd7eca30b0e386cbc6d2743ffb68dcae131bf6/pyee-9.0.4-py2.py3-none-any.whl
+Collecting pylibsrtp>=0.5.6 (from aiortc->-r requirements.txt (line 7))
+  Using cached https://files.pythonhosted.org/packages/92/e5/09b3e8102ab7b7b73ea6e11e4d2c0e9f8249f3a0494ba3e5b35f419aea3e/pylibsrtp-0.7.1.tar.gz
+Collecting dataclasses (from aiortc->-r requirements.txt (line 7))
+  Using cached https://files.pythonhosted.org/packages/fe/ca/75fac5856ab5cfa51bbbcefa250182e50441074fdc3f803f6e76451fab43/dataclasses-0.8-py3-none-any.whl
+Collecting idna>=2.0 (from yarl<2.0,>=1.0->aiohttp->-r requirements.txt (line 4))
+  Using cached https://files.pythonhosted.org/packages/04/a2/d918dcd22354d8958fe113e1a3630137e0fc8b44859ade3063982eacd2a4/idna-3.3-py3-none-any.whl
+Collecting pycparser (from cffi>=1.0.0->aiortc->-r requirements.txt (line 7))
+  Using cached https://files.pythonhosted.org/packages/62/d5/5f610ebe421e85889f2e55e33b7f9a6795bd982198517d912eb1c76e1a53/pycparser-2.21-py2.py3-none-any.whl
+Building wheels for collected packages: av, aiortc, pylibsrtp
+  Running setup.py bdist_wheel for av: started
+  Running setup.py bdist_wheel for av: still running...
+  Running setup.py bdist_wheel for av: still running...
+  Running setup.py bdist_wheel for av: still running...
+  Running setup.py bdist_wheel for av: still running...
+  Running setup.py bdist_wheel for av: finished with status 'error'
+  Complete output from command /usr/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-lky1jsmk/av/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmppqwbp0ifpip-wheel- --python-tag cp36:
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-aarch64-3.6
+  creating build/lib.linux-aarch64-3.6/av
+  copying av/deprecation.py -> build/lib.linux-aarch64-3.6/av
+  copying av/about.py -> build/lib.linux-aarch64-3.6/av
+  copying av/__main__.py -> build/lib.linux-aarch64-3.6/av
+  copying av/datasets.py -> build/lib.linux-aarch64-3.6/av
+  copying av/__init__.py -> build/lib.linux-aarch64-3.6/av
+  creating build/lib.linux-aarch64-3.6/av/subtitles
+  copying av/subtitles/__init__.py -> build/lib.linux-aarch64-3.6/av/subtitles
+  creating build/lib.linux-aarch64-3.6/av/video
+  copying av/video/__init__.py -> build/lib.linux-aarch64-3.6/av/video
+  creating build/lib.linux-aarch64-3.6/av/data
+  copying av/data/__init__.py -> build/lib.linux-aarch64-3.6/av/data
+  creating build/lib.linux-aarch64-3.6/av/container
+  copying av/container/__init__.py -> build/lib.linux-aarch64-3.6/av/container
+  creating build/lib.linux-aarch64-3.6/av/codec
+  copying av/codec/__init__.py -> build/lib.linux-aarch64-3.6/av/codec
+  creating build/lib.linux-aarch64-3.6/av/filter
+  copying av/filter/__init__.py -> build/lib.linux-aarch64-3.6/av/filter
+  creating build/lib.linux-aarch64-3.6/av/audio
+  copying av/audio/__init__.py -> build/lib.linux-aarch64-3.6/av/audio
+  creating build/lib.linux-aarch64-3.6/av/sidedata
+  copying av/sidedata/__init__.py -> build/lib.linux-aarch64-3.6/av/sidedata
+  running build_ext
+  running config
+  PyAV: 9.0.0
+  Python: 3.6.9 (default, Dec  8 2021, 21:08:43)
+  [GCC 8.4.0]
+  platform: Linux-4.9.253-tegra-aarch64-with-Ubuntu-18.04-bionic
+  extension_extra:
+  	include_dirs: ['include', '/usr/include/aarch64-linux-gnu']
+  	libraries: ['avformat', 'avcodec', 'avdevice', 'avutil', 'avfilter', 'swscale', 'swresample']
+  	library_dirs: []
+  	define_macros: []
+  	runtime_library_dirs: []
+  running cythonize
+  Compiling av/logging.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/string.pxd.
+  [1/1] Cythonizing av/logging.pyx
+  Compiling av/format.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/format.pyx
+  Compiling av/stream.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/string.pxd.
+  [1/1] Cythonizing av/stream.pyx
+  Compiling av/bytesource.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/cpython/buffer.pxd.
+  [1/1] Cythonizing av/bytesource.pyx
+  Compiling av/option.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/option.pyx
+  Compiling av/error.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/error.pyx
+  Compiling av/buffer.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/string.pxd.
+  [1/1] Cythonizing av/buffer.pyx
+  Compiling av/utils.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/utils.pyx
+  Compiling av/packet.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/packet.pyx
+  Compiling av/plane.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/plane.pyx
+  Compiling av/frame.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/frame.pyx
+  Compiling av/dictionary.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/dictionary.pyx
+  Compiling av/_core.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/_core.pyx
+  Compiling av/descriptor.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/descriptor.pyx
+  Compiling av/subtitles/stream.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/subtitles/stream.pyx
+  Compiling av/subtitles/codeccontext.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/subtitles/codeccontext.pyx
+  Compiling av/subtitles/subtitle.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/string.pxd.
+  [1/1] Cythonizing av/subtitles/subtitle.pyx
+  Compiling av/video/format.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/video/format.pyx
+  Compiling av/video/stream.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/video/stream.pyx
+  Compiling av/video/plane.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/video/plane.pyx
+  Compiling av/video/frame.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/video/frame.pyx
+  Compiling av/video/codeccontext.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/video/codeccontext.pyx
+  Compiling av/video/reformatter.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/video/reformatter.pyx
+  Compiling av/data/stream.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/data/stream.pyx
+  Compiling av/container/input.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/string.pxd.
+  [1/1] Cythonizing av/container/input.pyx
+  Compiling av/container/pyio.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/string.pxd.
+  [1/1] Cythonizing av/container/pyio.pyx
+  Compiling av/container/core.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/string.pxd.
+  [1/1] Cythonizing av/container/core.pyx
+  Compiling av/container/output.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/container/output.pyx
+  Compiling av/container/streams.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/container/streams.pyx
+  Compiling av/codec/codec.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/codec/codec.pyx
+  Compiling av/codec/context.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/string.pxd.
+  [1/1] Cythonizing av/codec/context.pyx
+  Compiling av/filter/context.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/string.pxd.
+  [1/1] Cythonizing av/filter/context.pyx
+  Compiling av/filter/pad.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/filter/pad.pyx
+  Compiling av/filter/link.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/filter/link.pyx
+  Compiling av/filter/graph.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/filter/graph.pyx
+  Compiling av/filter/filter.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/filter/filter.pyx
+  Compiling av/audio/format.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/audio/format.pyx
+  Compiling av/audio/resampler.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/audio/resampler.pyx
+  Compiling av/audio/stream.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/audio/stream.pyx
+  Compiling av/audio/layout.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/audio/layout.pyx
+  Compiling av/audio/plane.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/audio/plane.pyx
+  Compiling av/audio/fifo.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/audio/fifo.pyx
+  Compiling av/audio/frame.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/audio/frame.pyx
+  Compiling av/audio/codeccontext.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/audio/codeccontext.pyx
+  Compiling av/sidedata/motionvectors.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/sidedata/motionvectors.pyx
+  Compiling av/sidedata/sidedata.pyx because it depends on /home/redblu/.local/lib/python3.6/site-packages/Cython/Includes/libc/stdint.pxd.
+  [1/1] Cythonizing av/sidedata/sidedata.pyx
+  building 'av.logging' extension
+  creating build/temp.linux-aarch64-3.6
+  creating build/temp.linux-aarch64-3.6/src
+  creating build/temp.linux-aarch64-3.6/src/av
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/logging.c -o build/temp.linux-aarch64-3.6/src/av/logging.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/logging.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/logging.cpython-36m-aarch64-linux-gnu.so
+  building 'av.format' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/format.c -o build/temp.linux-aarch64-3.6/src/av/format.o
+  src/av/format.c: In function ‘__pyx_f_2av_6format_get_output_format_names’:
+  src/av/format.c:3249:19: warning: implicit declaration of function ‘av_muxer_iterate’; did you mean ‘av_buffer_create’? [-Wimplicit-function-declaration]
+       __pyx_v_ptr = av_muxer_iterate((&__pyx_v_opaque));
+                     ^~~~~~~~~~~~~~~~
+                     av_buffer_create
+  src/av/format.c:3249:17: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       __pyx_v_ptr = av_muxer_iterate((&__pyx_v_opaque));
+                   ^
+  src/av/format.c: In function ‘__pyx_f_2av_6format_get_input_format_names’:
+  src/av/format.c:3388:19: warning: implicit declaration of function ‘av_demuxer_iterate’; did you mean ‘av_demuxer_open’? [-Wimplicit-function-declaration]
+       __pyx_v_ptr = av_demuxer_iterate((&__pyx_v_opaque));
+                     ^~~~~~~~~~~~~~~~~~
+                     av_demuxer_open
+  src/av/format.c:3388:17: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       __pyx_v_ptr = av_demuxer_iterate((&__pyx_v_opaque));
+                   ^
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/format.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/format.cpython-36m-aarch64-linux-gnu.so
+  building 'av.stream' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/stream.c -o build/temp.linux-aarch64-3.6/src/av/stream.o
+  src/av/stream.c: In function ‘__pyx_f_2av_6stream_wrap_stream’:
+  src/av/stream.c:2253:3: warning: ‘codec’ is deprecated [-Wdeprecated-declarations]
+     switch (__pyx_v_c_stream->codec->codec_type) {
+     ^~~~~~
+  In file included from /usr/include/aarch64-linux-gnu/libavdevice/avdevice.h:51:0,
+                   from src/av/stream.c:754:
+  /usr/include/aarch64-linux-gnu/libavformat/avformat.h:893:21: note: declared here
+       AVCodecContext *codec;
+                       ^~~~~
+  src/av/stream.c: In function ‘__pyx_f_2av_6stream_6Stream__init’:
+  src/av/stream.c:2871:3: warning: ‘codec’ is deprecated [-Wdeprecated-declarations]
+     __pyx_t_1 = __pyx_v_stream->codec;
+     ^~~~~~~~~
+  In file included from /usr/include/aarch64-linux-gnu/libavdevice/avdevice.h:51:0,
+                   from src/av/stream.c:754:
+  /usr/include/aarch64-linux-gnu/libavformat/avformat.h:893:21: note: declared here
+       AVCodecContext *codec;
+                       ^~~~~
+  src/av/stream.c:2991:15: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+       __pyx_t_6 = __pyx_v_self->_codec_context->codec;
+                 ^
+  src/av/stream.c: In function ‘__pyx_f_2av_6stream_6Stream__finalize_for_output’:
+  src/av/stream.c:3755:3: warning: ‘codec’ is deprecated [-Wdeprecated-declarations]
+     __pyx_t_7 = __pyx_f_2av_5error_err_check(avcodec_parameters_from_context(__pyx_v_self->_stream->codecpar, __pyx_v_self->_stream->codec), 0, NULL); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 147, __pyx_L1_error)
+     ^~~~~~~~~
+  In file included from /usr/include/aarch64-linux-gnu/libavdevice/avdevice.h:51:0,
+                   from src/av/stream.c:754:
+  /usr/include/aarch64-linux-gnu/libavformat/avformat.h:893:21: note: declared here
+       AVCodecContext *codec;
+                       ^~~~~
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/stream.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/stream.cpython-36m-aarch64-linux-gnu.so
+  building 'av.bytesource' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/bytesource.c -o build/temp.linux-aarch64-3.6/src/av/bytesource.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/bytesource.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/bytesource.cpython-36m-aarch64-linux-gnu.so
+  building 'av.option' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/option.c -o build/temp.linux-aarch64-3.6/src/av/option.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/option.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/option.cpython-36m-aarch64-linux-gnu.so
+  building 'av.error' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/error.c -o build/temp.linux-aarch64-3.6/src/av/error.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/error.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/error.cpython-36m-aarch64-linux-gnu.so
+  building 'av.buffer' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/buffer.c -o build/temp.linux-aarch64-3.6/src/av/buffer.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/buffer.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/buffer.cpython-36m-aarch64-linux-gnu.so
+  building 'av.utils' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/utils.c -o build/temp.linux-aarch64-3.6/src/av/utils.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/utils.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/utils.cpython-36m-aarch64-linux-gnu.so
+  building 'av.packet' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/packet.c -o build/temp.linux-aarch64-3.6/src/av/packet.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/packet.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/packet.cpython-36m-aarch64-linux-gnu.so
+  building 'av.plane' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/plane.c -o build/temp.linux-aarch64-3.6/src/av/plane.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/plane.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/plane.cpython-36m-aarch64-linux-gnu.so
+  building 'av.frame' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/frame.c -o build/temp.linux-aarch64-3.6/src/av/frame.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/frame.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/frame.cpython-36m-aarch64-linux-gnu.so
+  building 'av.dictionary' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/dictionary.c -o build/temp.linux-aarch64-3.6/src/av/dictionary.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/dictionary.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/dictionary.cpython-36m-aarch64-linux-gnu.so
+  building 'av._core' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/_core.c -o build/temp.linux-aarch64-3.6/src/av/_core.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/_core.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/_core.cpython-36m-aarch64-linux-gnu.so
+  building 'av.enum' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/enum.c -o build/temp.linux-aarch64-3.6/src/av/enum.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/enum.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/enum.cpython-36m-aarch64-linux-gnu.so
+  building 'av.descriptor' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/descriptor.c -o build/temp.linux-aarch64-3.6/src/av/descriptor.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/descriptor.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/descriptor.cpython-36m-aarch64-linux-gnu.so
+  building 'av.subtitles.stream' extension
+  creating build/temp.linux-aarch64-3.6/src/av/subtitles
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/subtitles/stream.c -o build/temp.linux-aarch64-3.6/src/av/subtitles/stream.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/subtitles/stream.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/subtitles/stream.cpython-36m-aarch64-linux-gnu.so
+  building 'av.subtitles.codeccontext' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/subtitles/codeccontext.c -o build/temp.linux-aarch64-3.6/src/av/subtitles/codeccontext.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/subtitles/codeccontext.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/subtitles/codeccontext.cpython-36m-aarch64-linux-gnu.so
+  building 'av.subtitles.subtitle' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/subtitles/subtitle.c -o build/temp.linux-aarch64-3.6/src/av/subtitles/subtitle.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/subtitles/subtitle.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/subtitles/subtitle.cpython-36m-aarch64-linux-gnu.so
+  building 'av.video.format' extension
+  creating build/temp.linux-aarch64-3.6/src/av/video
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/video/format.c -o build/temp.linux-aarch64-3.6/src/av/video/format.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/video/format.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/video/format.cpython-36m-aarch64-linux-gnu.so
+  building 'av.video.stream' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/video/stream.c -o build/temp.linux-aarch64-3.6/src/av/video/stream.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/video/stream.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/video/stream.cpython-36m-aarch64-linux-gnu.so
+  building 'av.video.plane' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/video/plane.c -o build/temp.linux-aarch64-3.6/src/av/video/plane.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/video/plane.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/video/plane.cpython-36m-aarch64-linux-gnu.so
+  building 'av.video.frame' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/video/frame.c -o build/temp.linux-aarch64-3.6/src/av/video/frame.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/video/frame.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/video/frame.cpython-36m-aarch64-linux-gnu.so
+  building 'av.video.codeccontext' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/video/codeccontext.c -o build/temp.linux-aarch64-3.6/src/av/video/codeccontext.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/video/codeccontext.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/video/codeccontext.cpython-36m-aarch64-linux-gnu.so
+  building 'av.video.reformatter' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/video/reformatter.c -o build/temp.linux-aarch64-3.6/src/av/video/reformatter.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/video/reformatter.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/video/reformatter.cpython-36m-aarch64-linux-gnu.so
+  building 'av.data.stream' extension
+  creating build/temp.linux-aarch64-3.6/src/av/data
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/data/stream.c -o build/temp.linux-aarch64-3.6/src/av/data/stream.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/data/stream.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/data/stream.cpython-36m-aarch64-linux-gnu.so
+  building 'av.container.input' extension
+  creating build/temp.linux-aarch64-3.6/src/av/container
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/container/input.c -o build/temp.linux-aarch64-3.6/src/av/container/input.o
+  src/av/container/input.c: In function ‘__pyx_f_2av_9container_5input_14InputContainer_flush_buffers’:
+  src/av/container/input.c:4931:11: warning: ‘codec’ is deprecated [-Wdeprecated-declarations]
+             __pyx_t_5 = (__pyx_v_stream->codec != 0);
+             ^~~~~~~~~
+  In file included from /usr/include/aarch64-linux-gnu/libavdevice/avdevice.h:51:0,
+                   from src/av/container/input.c:753:
+  /usr/include/aarch64-linux-gnu/libavformat/avformat.h:893:21: note: declared here
+       AVCodecContext *codec;
+                       ^~~~~
+  src/av/container/input.c:4937:11: warning: ‘codec’ is deprecated [-Wdeprecated-declarations]
+             __pyx_t_5 = (__pyx_v_stream->codec->codec != 0);
+             ^~~~~~~~~
+  In file included from /usr/include/aarch64-linux-gnu/libavdevice/avdevice.h:51:0,
+                   from src/av/container/input.c:753:
+  /usr/include/aarch64-linux-gnu/libavformat/avformat.h:893:21: note: declared here
+       AVCodecContext *codec;
+                       ^~~~~
+  src/av/container/input.c:4943:11: warning: ‘codec’ is deprecated [-Wdeprecated-declarations]
+             __pyx_t_5 = ((__pyx_v_stream->codec->codec_id != AV_CODEC_ID_NONE) != 0);
+             ^~~~~~~~~
+  In file included from /usr/include/aarch64-linux-gnu/libavdevice/avdevice.h:51:0,
+                   from src/av/container/input.c:753:
+  /usr/include/aarch64-linux-gnu/libavformat/avformat.h:893:21: note: declared here
+       AVCodecContext *codec;
+                       ^~~~~
+  src/av/container/input.c:4953:13: warning: ‘codec’ is deprecated [-Wdeprecated-declarations]
+               avcodec_flush_buffers(__pyx_v_stream->codec);
+               ^~~~~~~~~~~~~~~~~~~~~
+  In file included from /usr/include/aarch64-linux-gnu/libavdevice/avdevice.h:51:0,
+                   from src/av/container/input.c:753:
+  /usr/include/aarch64-linux-gnu/libavformat/avformat.h:893:21: note: declared here
+       AVCodecContext *codec;
+                       ^~~~~
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/container/input.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/container/input.cpython-36m-aarch64-linux-gnu.so
+  building 'av.container.pyio' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/container/pyio.c -o build/temp.linux-aarch64-3.6/src/av/container/pyio.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/container/pyio.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/container/pyio.cpython-36m-aarch64-linux-gnu.so
+  building 'av.container.core' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/container/core.c -o build/temp.linux-aarch64-3.6/src/av/container/core.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/container/core.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/container/core.cpython-36m-aarch64-linux-gnu.so
+  building 'av.container.output' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/container/output.c -o build/temp.linux-aarch64-3.6/src/av/container/output.o
+  src/av/container/output.c: In function ‘__pyx_pf_2av_9container_6output_15OutputContainer_4add_stream’:
+  src/av/container/output.c:2979:3: warning: ‘codec’ is deprecated [-Wdeprecated-declarations]
+     __pyx_t_9 = __pyx_v_stream->codec;
+     ^~~~~~~~~
+  In file included from /usr/include/aarch64-linux-gnu/libavdevice/avdevice.h:51:0,
+                   from src/av/container/output.c:753:
+  /usr/include/aarch64-linux-gnu/libavformat/avformat.h:893:21: note: declared here
+       AVCodecContext *codec;
+                       ^~~~~
+  src/av/container/output.c:3000:5: warning: ‘avcodec_copy_context’ is deprecated [-Wdeprecated-declarations]
+       (void)(avcodec_copy_context(__pyx_v_codec_context, __pyx_v_template->_codec_context));
+       ^
+  In file included from src/av/container/output.c:752:0:
+  /usr/include/aarch64-linux-gnu/libavcodec/avcodec.h:4412:5: note: declared here
+   int avcodec_copy_context(AVCodecContext *dest, const AVCodecContext *src);
+       ^~~~~~~~~~~~~~~~~~~~
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/container/output.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/container/output.cpython-36m-aarch64-linux-gnu.so
+  building 'av.container.streams' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/container/streams.c -o build/temp.linux-aarch64-3.6/src/av/container/streams.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/container/streams.o -lavutil -lavdevice -lavcodec -lswresample -lswscale -lavfilter -lavformat -o build/lib.linux-aarch64-3.6/av/container/streams.cpython-36m-aarch64-linux-gnu.so
+  building 'av.codec.codec' extension
+  creating build/temp.linux-aarch64-3.6/src/av/codec
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/codec/codec.c -o build/temp.linux-aarch64-3.6/src/av/codec/codec.o
+  src/av/codec/codec.c: In function ‘__pyx_f_2av_5codec_5codec_get_codec_names’:
+  src/av/codec/codec.c:4092:19: warning: implicit declaration of function ‘av_codec_iterate’; did you mean ‘av_codec_next’? [-Wimplicit-function-declaration]
+       __pyx_v_ptr = av_codec_iterate((&__pyx_v_opaque));
+                     ^~~~~~~~~~~~~~~~
+                     av_codec_next
+  src/av/codec/codec.c:4092:17: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+       __pyx_v_ptr = av_codec_iterate((&__pyx_v_opaque));
+                   ^
+  src/av/codec/codec.c: In function ‘__pyx_pymod_exec_codec’:
+  src/av/codec/codec.c:6204:36: error: ‘AV_CODEC_CAP_HARDWARE’ undeclared (first use in this function); did you mean ‘AV_CODEC_CAP_DR1’?
+     __pyx_t_7 = __Pyx_PyInt_From_int(AV_CODEC_CAP_HARDWARE); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 121, __pyx_L1_error)
+                                      ^~~~~~~~~~~~~~~~~~~~~
+                                      AV_CODEC_CAP_DR1
+  src/av/codec/codec.c:6204:36: note: each undeclared identifier is reported only once for each function it appears in
+  src/av/codec/codec.c:6225:36: error: ‘AV_CODEC_CAP_HYBRID’ undeclared (first use in this function); did you mean ‘AV_CODEC_CAP_DR1’?
+     __pyx_t_7 = __Pyx_PyInt_From_int(AV_CODEC_CAP_HYBRID); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 125, __pyx_L1_error)
+                                      ^~~~~~~~~~~~~~~~~~~
+                                      AV_CODEC_CAP_DR1
+  error: command 'aarch64-linux-gnu-gcc' failed with exit status 1
+  
+  ----------------------------------------
+  Failed building wheel for av
+  Running setup.py clean for av
+  Running setup.py bdist_wheel for aiortc: started
+  Running setup.py bdist_wheel for aiortc: finished with status 'error'
+  Complete output from command /usr/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-lky1jsmk/aiortc/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmp1mthmpn0pip-wheel- --python-tag cp36:
+  /home/redblu/.local/lib/python3.6/site-packages/pkg_resources/__init__.py:119: PkgResourcesDeprecationWarning: 0.18ubuntu0.18.04.1 is an invalid version and will not be supported in a future release
+    PkgResourcesDeprecationWarning,
+  /home/redblu/.local/lib/python3.6/site-packages/setuptools/installer.py:30: SetuptoolsDeprecationWarning: setuptools.installer is deprecated. Requirements should be satisfied by a PEP 517 installer.
+    SetuptoolsDeprecationWarning,
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-aarch64-3.6
+  creating build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/rtcdatachannel.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/rtcdtlstransport.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/exceptions.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/rtcsessiondescription.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/rtcrtpparameters.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/sdp.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/clock.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/about.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/mediastreams.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/rtcsctptransport.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/rate.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/jitterbuffer.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/events.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/rtcrtptransceiver.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/stats.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/rtcpeerconnection.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/rtcconfiguration.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/rtcrtpsender.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/utils.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/rtp.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/rtcicetransport.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/rtcrtpreceiver.py -> build/lib.linux-aarch64-3.6/aiortc
+  copying src/aiortc/__init__.py -> build/lib.linux-aarch64-3.6/aiortc
+  creating build/lib.linux-aarch64-3.6/aiortc/codecs
+  copying src/aiortc/codecs/h264.py -> build/lib.linux-aarch64-3.6/aiortc/codecs
+  copying src/aiortc/codecs/vpx.py -> build/lib.linux-aarch64-3.6/aiortc/codecs
+  copying src/aiortc/codecs/opus.py -> build/lib.linux-aarch64-3.6/aiortc/codecs
+  copying src/aiortc/codecs/base.py -> build/lib.linux-aarch64-3.6/aiortc/codecs
+  copying src/aiortc/codecs/__init__.py -> build/lib.linux-aarch64-3.6/aiortc/codecs
+  copying src/aiortc/codecs/g711.py -> build/lib.linux-aarch64-3.6/aiortc/codecs
+  creating build/lib.linux-aarch64-3.6/aiortc/contrib
+  copying src/aiortc/contrib/media.py -> build/lib.linux-aarch64-3.6/aiortc/contrib
+  copying src/aiortc/contrib/signaling.py -> build/lib.linux-aarch64-3.6/aiortc/contrib
+  copying src/aiortc/contrib/__init__.py -> build/lib.linux-aarch64-3.6/aiortc/contrib
+  running build_ext
+  generating cffi module 'build/temp.linux-aarch64-3.6/aiortc.codecs._vpx.c'
+  creating build/temp.linux-aarch64-3.6
+  generating cffi module 'build/temp.linux-aarch64-3.6/aiortc.codecs._opus.c'
+  building 'aiortc.codecs._opus' extension
+  creating build/temp.linux-aarch64-3.6/build
+  creating build/temp.linux-aarch64-3.6/build/temp.linux-aarch64-3.6
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python3.6m -c build/temp.linux-aarch64-3.6/aiortc.codecs._opus.c -o build/temp.linux-aarch64-3.6/build/temp.linux-aarch64-3.6/aiortc.codecs._opus.o
+  build/temp.linux-aarch64-3.6/aiortc.codecs._opus.c:570:10: fatal error: opus/opus.h: No such file or directory
+   #include <opus/opus.h>
+            ^~~~~~~~~~~~~
+  compilation terminated.
+  error: command 'aarch64-linux-gnu-gcc' failed with exit status 1
+  
+  ----------------------------------------
+  Failed building wheel for aiortc
+  Running setup.py clean for aiortc
+  Running setup.py bdist_wheel for pylibsrtp: started
+  Running setup.py bdist_wheel for pylibsrtp: finished with status 'error'
+  Complete output from command /usr/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-lky1jsmk/pylibsrtp/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmpfu4sdeh2pip-wheel- --python-tag cp36:
+  /home/redblu/.local/lib/python3.6/site-packages/pkg_resources/__init__.py:119: PkgResourcesDeprecationWarning: 0.18ubuntu0.18.04.1 is an invalid version and will not be supported in a future release
+    PkgResourcesDeprecationWarning,
+  /home/redblu/.local/lib/python3.6/site-packages/setuptools/installer.py:30: SetuptoolsDeprecationWarning: setuptools.installer is deprecated. Requirements should be satisfied by a PEP 517 installer.
+    SetuptoolsDeprecationWarning,
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-aarch64-3.6
+  creating build/lib.linux-aarch64-3.6/pylibsrtp
+  copying src/pylibsrtp/about.py -> build/lib.linux-aarch64-3.6/pylibsrtp
+  copying src/pylibsrtp/__init__.py -> build/lib.linux-aarch64-3.6/pylibsrtp
+  copying src/pylibsrtp/py.typed -> build/lib.linux-aarch64-3.6/pylibsrtp
+  running build_ext
+  generating cffi module 'build/temp.linux-aarch64-3.6/pylibsrtp._binding.c'
+  creating build/temp.linux-aarch64-3.6
+  building 'pylibsrtp._binding' extension
+  creating build/temp.linux-aarch64-3.6/build
+  creating build/temp.linux-aarch64-3.6/build/temp.linux-aarch64-3.6
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python3.6m -c build/temp.linux-aarch64-3.6/pylibsrtp._binding.c -o build/temp.linux-aarch64-3.6/build/temp.linux-aarch64-3.6/pylibsrtp._binding.o
+  build/temp.linux-aarch64-3.6/pylibsrtp._binding.c:569:10: fatal error: srtp2/srtp.h: No such file or directory
+   #include <srtp2/srtp.h>
+            ^~~~~~~~~~~~~~
+  compilation terminated.
+  error: command 'aarch64-linux-gnu-gcc' failed with exit status 1
+  
+  ----------------------------------------
+  Failed building wheel for pylibsrtp
+  Running setup.py clean for pylibsrtp
+Failed to build av aiortc pylibsrtp
+Installing collected packages: cython, typing-extensions, async-timeout, av, multidict, charset-normalizer, frozenlist, aiosignal, attrs, asynctest, idna, yarl, idna-ssl, aiohttp, aiohttp-basicauth, dnspython, netifaces, aioice, pycparser, cffi, cryptography, google-crc32c, pyee, pylibsrtp, dataclasses, aiortc
+  Running setup.py install for av: started
+    Running setup.py install for av: still running...
+    Running setup.py install for av: still running...
+    Running setup.py install for av: finished with status 'error'
+    Complete output from command /usr/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-lky1jsmk/av/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-jffc9hv0-record/install-record.txt --single-version-externally-managed --compile --user --prefix=:
+    running install
+    /home/redblu/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+      setuptools.SetuptoolsDeprecationWarning,
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-aarch64-3.6
+    creating build/lib.linux-aarch64-3.6/av
+    copying av/deprecation.py -> build/lib.linux-aarch64-3.6/av
+    copying av/about.py -> build/lib.linux-aarch64-3.6/av
+    copying av/__main__.py -> build/lib.linux-aarch64-3.6/av
+    copying av/datasets.py -> build/lib.linux-aarch64-3.6/av
+    copying av/__init__.py -> build/lib.linux-aarch64-3.6/av
+    creating build/lib.linux-aarch64-3.6/av/subtitles
+    copying av/subtitles/__init__.py -> build/lib.linux-aarch64-3.6/av/subtitles
+    creating build/lib.linux-aarch64-3.6/av/video
+    copying av/video/__init__.py -> build/lib.linux-aarch64-3.6/av/video
+    creating build/lib.linux-aarch64-3.6/av/data
+    copying av/data/__init__.py -> build/lib.linux-aarch64-3.6/av/data
+    creating build/lib.linux-aarch64-3.6/av/container
+    copying av/container/__init__.py -> build/lib.linux-aarch64-3.6/av/container
+    creating build/lib.linux-aarch64-3.6/av/codec
+    copying av/codec/__init__.py -> build/lib.linux-aarch64-3.6/av/codec
+    creating build/lib.linux-aarch64-3.6/av/filter
+    copying av/filter/__init__.py -> build/lib.linux-aarch64-3.6/av/filter
+    creating build/lib.linux-aarch64-3.6/av/audio
+    copying av/audio/__init__.py -> build/lib.linux-aarch64-3.6/av/audio
+    creating build/lib.linux-aarch64-3.6/av/sidedata
+    copying av/sidedata/__init__.py -> build/lib.linux-aarch64-3.6/av/sidedata
+    running build_ext
+    running config
+    PyAV: 9.0.0
+    Python: 3.6.9 (default, Dec  8 2021, 21:08:43)
+    [GCC 8.4.0]
+    platform: Linux-4.9.253-tegra-aarch64-with-Ubuntu-18.04-bionic
+    extension_extra:
+    	include_dirs: ['include', '/usr/include/aarch64-linux-gnu']
+    	libraries: ['avformat', 'avcodec', 'avdevice', 'avutil', 'avfilter', 'swscale', 'swresample']
+    	library_dirs: []
+    	define_macros: []
+    	runtime_library_dirs: []
+    running cythonize
+    building 'av.logging' extension
+    creating build/temp.linux-aarch64-3.6
+    creating build/temp.linux-aarch64-3.6/src
+    creating build/temp.linux-aarch64-3.6/src/av
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/logging.c -o build/temp.linux-aarch64-3.6/src/av/logging.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/logging.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/logging.cpython-36m-aarch64-linux-gnu.so
+    building 'av.format' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/format.c -o build/temp.linux-aarch64-3.6/src/av/format.o
+    src/av/format.c: In function ‘__pyx_f_2av_6format_get_output_format_names’:
+    src/av/format.c:3249:19: warning: implicit declaration of function ‘av_muxer_iterate’; did you mean ‘av_buffer_create’? [-Wimplicit-function-declaration]
+         __pyx_v_ptr = av_muxer_iterate((&__pyx_v_opaque));
+                       ^~~~~~~~~~~~~~~~
+                       av_buffer_create
+    src/av/format.c:3249:17: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+         __pyx_v_ptr = av_muxer_iterate((&__pyx_v_opaque));
+                     ^
+    src/av/format.c: In function ‘__pyx_f_2av_6format_get_input_format_names’:
+    src/av/format.c:3388:19: warning: implicit declaration of function ‘av_demuxer_iterate’; did you mean ‘av_demuxer_open’? [-Wimplicit-function-declaration]
+         __pyx_v_ptr = av_demuxer_iterate((&__pyx_v_opaque));
+                       ^~~~~~~~~~~~~~~~~~
+                       av_demuxer_open
+    src/av/format.c:3388:17: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+         __pyx_v_ptr = av_demuxer_iterate((&__pyx_v_opaque));
+                     ^
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/format.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/format.cpython-36m-aarch64-linux-gnu.so
+    building 'av.stream' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/stream.c -o build/temp.linux-aarch64-3.6/src/av/stream.o
+    src/av/stream.c: In function ‘__pyx_f_2av_6stream_wrap_stream’:
+    src/av/stream.c:2253:3: warning: ‘codec’ is deprecated [-Wdeprecated-declarations]
+       switch (__pyx_v_c_stream->codec->codec_type) {
+       ^~~~~~
+    In file included from /usr/include/aarch64-linux-gnu/libavdevice/avdevice.h:51:0,
+                     from src/av/stream.c:754:
+    /usr/include/aarch64-linux-gnu/libavformat/avformat.h:893:21: note: declared here
+         AVCodecContext *codec;
+                         ^~~~~
+    src/av/stream.c: In function ‘__pyx_f_2av_6stream_6Stream__init’:
+    src/av/stream.c:2871:3: warning: ‘codec’ is deprecated [-Wdeprecated-declarations]
+       __pyx_t_1 = __pyx_v_stream->codec;
+       ^~~~~~~~~
+    In file included from /usr/include/aarch64-linux-gnu/libavdevice/avdevice.h:51:0,
+                     from src/av/stream.c:754:
+    /usr/include/aarch64-linux-gnu/libavformat/avformat.h:893:21: note: declared here
+         AVCodecContext *codec;
+                         ^~~~~
+    src/av/stream.c:2991:15: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+         __pyx_t_6 = __pyx_v_self->_codec_context->codec;
+                   ^
+    src/av/stream.c: In function ‘__pyx_f_2av_6stream_6Stream__finalize_for_output’:
+    src/av/stream.c:3755:3: warning: ‘codec’ is deprecated [-Wdeprecated-declarations]
+       __pyx_t_7 = __pyx_f_2av_5error_err_check(avcodec_parameters_from_context(__pyx_v_self->_stream->codecpar, __pyx_v_self->_stream->codec), 0, NULL); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 147, __pyx_L1_error)
+       ^~~~~~~~~
+    In file included from /usr/include/aarch64-linux-gnu/libavdevice/avdevice.h:51:0,
+                     from src/av/stream.c:754:
+    /usr/include/aarch64-linux-gnu/libavformat/avformat.h:893:21: note: declared here
+         AVCodecContext *codec;
+                         ^~~~~
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/stream.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/stream.cpython-36m-aarch64-linux-gnu.so
+    building 'av.bytesource' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/bytesource.c -o build/temp.linux-aarch64-3.6/src/av/bytesource.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/bytesource.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/bytesource.cpython-36m-aarch64-linux-gnu.so
+    building 'av.option' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/option.c -o build/temp.linux-aarch64-3.6/src/av/option.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/option.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/option.cpython-36m-aarch64-linux-gnu.so
+    building 'av.error' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/error.c -o build/temp.linux-aarch64-3.6/src/av/error.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/error.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/error.cpython-36m-aarch64-linux-gnu.so
+    building 'av.buffer' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/buffer.c -o build/temp.linux-aarch64-3.6/src/av/buffer.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/buffer.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/buffer.cpython-36m-aarch64-linux-gnu.so
+    building 'av.utils' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/utils.c -o build/temp.linux-aarch64-3.6/src/av/utils.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/utils.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/utils.cpython-36m-aarch64-linux-gnu.so
+    building 'av.packet' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/packet.c -o build/temp.linux-aarch64-3.6/src/av/packet.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/packet.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/packet.cpython-36m-aarch64-linux-gnu.so
+    building 'av.plane' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/plane.c -o build/temp.linux-aarch64-3.6/src/av/plane.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/plane.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/plane.cpython-36m-aarch64-linux-gnu.so
+    building 'av.frame' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/frame.c -o build/temp.linux-aarch64-3.6/src/av/frame.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/frame.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/frame.cpython-36m-aarch64-linux-gnu.so
+    building 'av.dictionary' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/dictionary.c -o build/temp.linux-aarch64-3.6/src/av/dictionary.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/dictionary.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/dictionary.cpython-36m-aarch64-linux-gnu.so
+    building 'av._core' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/_core.c -o build/temp.linux-aarch64-3.6/src/av/_core.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/_core.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/_core.cpython-36m-aarch64-linux-gnu.so
+    building 'av.enum' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/enum.c -o build/temp.linux-aarch64-3.6/src/av/enum.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/enum.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/enum.cpython-36m-aarch64-linux-gnu.so
+    building 'av.descriptor' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/descriptor.c -o build/temp.linux-aarch64-3.6/src/av/descriptor.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/descriptor.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/descriptor.cpython-36m-aarch64-linux-gnu.so
+    building 'av.subtitles.stream' extension
+    creating build/temp.linux-aarch64-3.6/src/av/subtitles
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/subtitles/stream.c -o build/temp.linux-aarch64-3.6/src/av/subtitles/stream.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/subtitles/stream.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/subtitles/stream.cpython-36m-aarch64-linux-gnu.so
+    building 'av.subtitles.codeccontext' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/subtitles/codeccontext.c -o build/temp.linux-aarch64-3.6/src/av/subtitles/codeccontext.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/subtitles/codeccontext.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/subtitles/codeccontext.cpython-36m-aarch64-linux-gnu.so
+    building 'av.subtitles.subtitle' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/subtitles/subtitle.c -o build/temp.linux-aarch64-3.6/src/av/subtitles/subtitle.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/subtitles/subtitle.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/subtitles/subtitle.cpython-36m-aarch64-linux-gnu.so
+    building 'av.video.format' extension
+    creating build/temp.linux-aarch64-3.6/src/av/video
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/video/format.c -o build/temp.linux-aarch64-3.6/src/av/video/format.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/video/format.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/video/format.cpython-36m-aarch64-linux-gnu.so
+    building 'av.video.stream' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/video/stream.c -o build/temp.linux-aarch64-3.6/src/av/video/stream.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/video/stream.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/video/stream.cpython-36m-aarch64-linux-gnu.so
+    building 'av.video.plane' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/video/plane.c -o build/temp.linux-aarch64-3.6/src/av/video/plane.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/video/plane.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/video/plane.cpython-36m-aarch64-linux-gnu.so
+    building 'av.video.frame' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/video/frame.c -o build/temp.linux-aarch64-3.6/src/av/video/frame.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/video/frame.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/video/frame.cpython-36m-aarch64-linux-gnu.so
+    building 'av.video.codeccontext' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/video/codeccontext.c -o build/temp.linux-aarch64-3.6/src/av/video/codeccontext.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/video/codeccontext.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/video/codeccontext.cpython-36m-aarch64-linux-gnu.so
+    building 'av.video.reformatter' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/video/reformatter.c -o build/temp.linux-aarch64-3.6/src/av/video/reformatter.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/video/reformatter.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/video/reformatter.cpython-36m-aarch64-linux-gnu.so
+    building 'av.data.stream' extension
+    creating build/temp.linux-aarch64-3.6/src/av/data
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/data/stream.c -o build/temp.linux-aarch64-3.6/src/av/data/stream.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/data/stream.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/data/stream.cpython-36m-aarch64-linux-gnu.so
+    building 'av.container.input' extension
+    creating build/temp.linux-aarch64-3.6/src/av/container
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/container/input.c -o build/temp.linux-aarch64-3.6/src/av/container/input.o
+    src/av/container/input.c: In function ‘__pyx_f_2av_9container_5input_14InputContainer_flush_buffers’:
+    src/av/container/input.c:4931:11: warning: ‘codec’ is deprecated [-Wdeprecated-declarations]
+               __pyx_t_5 = (__pyx_v_stream->codec != 0);
+               ^~~~~~~~~
+    In file included from /usr/include/aarch64-linux-gnu/libavdevice/avdevice.h:51:0,
+                     from src/av/container/input.c:753:
+    /usr/include/aarch64-linux-gnu/libavformat/avformat.h:893:21: note: declared here
+         AVCodecContext *codec;
+                         ^~~~~
+    src/av/container/input.c:4937:11: warning: ‘codec’ is deprecated [-Wdeprecated-declarations]
+               __pyx_t_5 = (__pyx_v_stream->codec->codec != 0);
+               ^~~~~~~~~
+    In file included from /usr/include/aarch64-linux-gnu/libavdevice/avdevice.h:51:0,
+                     from src/av/container/input.c:753:
+    /usr/include/aarch64-linux-gnu/libavformat/avformat.h:893:21: note: declared here
+         AVCodecContext *codec;
+                         ^~~~~
+    src/av/container/input.c:4943:11: warning: ‘codec’ is deprecated [-Wdeprecated-declarations]
+               __pyx_t_5 = ((__pyx_v_stream->codec->codec_id != AV_CODEC_ID_NONE) != 0);
+               ^~~~~~~~~
+    In file included from /usr/include/aarch64-linux-gnu/libavdevice/avdevice.h:51:0,
+                     from src/av/container/input.c:753:
+    /usr/include/aarch64-linux-gnu/libavformat/avformat.h:893:21: note: declared here
+         AVCodecContext *codec;
+                         ^~~~~
+    src/av/container/input.c:4953:13: warning: ‘codec’ is deprecated [-Wdeprecated-declarations]
+                 avcodec_flush_buffers(__pyx_v_stream->codec);
+                 ^~~~~~~~~~~~~~~~~~~~~
+    In file included from /usr/include/aarch64-linux-gnu/libavdevice/avdevice.h:51:0,
+                     from src/av/container/input.c:753:
+    /usr/include/aarch64-linux-gnu/libavformat/avformat.h:893:21: note: declared here
+         AVCodecContext *codec;
+                         ^~~~~
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/container/input.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/container/input.cpython-36m-aarch64-linux-gnu.so
+    building 'av.container.pyio' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/container/pyio.c -o build/temp.linux-aarch64-3.6/src/av/container/pyio.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/container/pyio.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/container/pyio.cpython-36m-aarch64-linux-gnu.so
+    building 'av.container.core' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/container/core.c -o build/temp.linux-aarch64-3.6/src/av/container/core.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/container/core.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/container/core.cpython-36m-aarch64-linux-gnu.so
+    building 'av.container.output' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/container/output.c -o build/temp.linux-aarch64-3.6/src/av/container/output.o
+    src/av/container/output.c: In function ‘__pyx_pf_2av_9container_6output_15OutputContainer_4add_stream’:
+    src/av/container/output.c:2979:3: warning: ‘codec’ is deprecated [-Wdeprecated-declarations]
+       __pyx_t_9 = __pyx_v_stream->codec;
+       ^~~~~~~~~
+    In file included from /usr/include/aarch64-linux-gnu/libavdevice/avdevice.h:51:0,
+                     from src/av/container/output.c:753:
+    /usr/include/aarch64-linux-gnu/libavformat/avformat.h:893:21: note: declared here
+         AVCodecContext *codec;
+                         ^~~~~
+    src/av/container/output.c:3000:5: warning: ‘avcodec_copy_context’ is deprecated [-Wdeprecated-declarations]
+         (void)(avcodec_copy_context(__pyx_v_codec_context, __pyx_v_template->_codec_context));
+         ^
+    In file included from src/av/container/output.c:752:0:
+    /usr/include/aarch64-linux-gnu/libavcodec/avcodec.h:4412:5: note: declared here
+     int avcodec_copy_context(AVCodecContext *dest, const AVCodecContext *src);
+         ^~~~~~~~~~~~~~~~~~~~
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/container/output.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/container/output.cpython-36m-aarch64-linux-gnu.so
+    building 'av.container.streams' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/container/streams.c -o build/temp.linux-aarch64-3.6/src/av/container/streams.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/src/av/container/streams.o -lavdevice -lswresample -lavutil -lavcodec -lavformat -lswscale -lavfilter -o build/lib.linux-aarch64-3.6/av/container/streams.cpython-36m-aarch64-linux-gnu.so
+    building 'av.codec.codec' extension
+    creating build/temp.linux-aarch64-3.6/src/av/codec
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iinclude -I/usr/include/aarch64-linux-gnu -I/usr/include/python3.6m -I/usr/include/python3.6m -c src/av/codec/codec.c -o build/temp.linux-aarch64-3.6/src/av/codec/codec.o
+    src/av/codec/codec.c: In function ‘__pyx_f_2av_5codec_5codec_get_codec_names’:
+    src/av/codec/codec.c:4092:19: warning: implicit declaration of function ‘av_codec_iterate’; did you mean ‘av_codec_next’? [-Wimplicit-function-declaration]
+         __pyx_v_ptr = av_codec_iterate((&__pyx_v_opaque));
+                       ^~~~~~~~~~~~~~~~
+                       av_codec_next
+    src/av/codec/codec.c:4092:17: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+         __pyx_v_ptr = av_codec_iterate((&__pyx_v_opaque));
+                     ^
+    src/av/codec/codec.c: In function ‘__pyx_pymod_exec_codec’:
+    src/av/codec/codec.c:6204:36: error: ‘AV_CODEC_CAP_HARDWARE’ undeclared (first use in this function); did you mean ‘AV_CODEC_CAP_DR1’?
+       __pyx_t_7 = __Pyx_PyInt_From_int(AV_CODEC_CAP_HARDWARE); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 121, __pyx_L1_error)
+                                        ^~~~~~~~~~~~~~~~~~~~~
+                                        AV_CODEC_CAP_DR1
+    src/av/codec/codec.c:6204:36: note: each undeclared identifier is reported only once for each function it appears in
+    src/av/codec/codec.c:6225:36: error: ‘AV_CODEC_CAP_HYBRID’ undeclared (first use in this function); did you mean ‘AV_CODEC_CAP_DR1’?
+       __pyx_t_7 = __Pyx_PyInt_From_int(AV_CODEC_CAP_HYBRID); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 125, __pyx_L1_error)
+                                        ^~~~~~~~~~~~~~~~~~~
+                                        AV_CODEC_CAP_DR1
+    error: command 'aarch64-linux-gnu-gcc' failed with exit status 1
+    
+    ----------------------------------------
+Command "/usr/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-lky1jsmk/av/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-jffc9hv0-record/install-record.txt --single-version-externally-managed --compile --user --prefix=" failed with error code 1 in /tmp/pip-build-lky1jsmk/av/
