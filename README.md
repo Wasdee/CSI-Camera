@@ -15,7 +15,7 @@ To test the camera:
 # Simple Test
 #  Ctrl^C to exit
 # sensor_id selects the camera: 0 or 1 on Jetson Nano B01
-$ gst-launch-1.0 nvarguscamerasrc sensor_id=0 ! nvoverlaysink
+$ gst-launch-1.0 nvarguscamerasrc sensor_id=1 ! nvoverlaysink
 
 # More specific - width, height and framerate are from supported video modes
 # Example also shows sensor_mode parameter to nvarguscamerasrc
@@ -25,6 +25,8 @@ $ gst-launch-1.0 nvarguscamerasrc sensor_id=0 ! \
    nvvidconv flip-method=0 ! 'video/x-raw,width=960, height=540' ! \
    nvvidconv ! nvegltransform ! nveglglessink -e
 ```
+
+Note: if error type `export DISPLAY=:0.0` in terminal first. [ref](https://github.com/JetsonHacksNano/CSI-Camera/issues/14)
 
 Note: The cameras may report differently than show below. You can use the simple gst-launch example above to determine the camera modes that are reported by the sensor you are using. 
 ```
@@ -42,6 +44,9 @@ simple_camera.py is a Python script which reads from the camera and displays the
 ```
 $ python simple_camera.py
 ```
+
+Note: Pls use system python 3.6.9 that already come with opencv, the lib `opencv-contrib-python` won't work
+
 ### face_detect.py
 
 face_detect.py is a python script which reads from the camera and uses  Haar Cascades to detect faces and eyes:

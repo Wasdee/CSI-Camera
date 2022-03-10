@@ -6,6 +6,7 @@
 # Drivers for the camera and OpenCV are included in the base image
 
 import cv2
+import time
 
 """ 
 gstreamer_pipeline returns a GStreamer pipeline for capturing from the CSI camera
@@ -24,7 +25,7 @@ def gstreamer_pipeline(
     flip_method=0,
 ):
     return (
-        "nvarguscamerasrc sensor-id=%d !"
+        "nvarguscamerasrc sensor-id=%d ! "
         "video/x-raw(memory:NVMM), width=(int)%d, height=(int)%d, framerate=(fraction)%d/1 ! "
         "nvvidconv flip-method=%d ! "
         "video/x-raw, width=(int)%d, height=(int)%d, format=(string)BGRx ! "
@@ -48,6 +49,7 @@ def show_camera():
     # To flip the image, modify the flip_method parameter (0 and 2 are the most common)
     print(gstreamer_pipeline(flip_method=0))
     video_capture = cv2.VideoCapture(gstreamer_pipeline(flip_method=0), cv2.CAP_GSTREAMER)
+    # time.sleep(10.0)
     if video_capture.isOpened():
         try:
             window_handle = cv2.namedWindow(window_title, cv2.WINDOW_AUTOSIZE)
